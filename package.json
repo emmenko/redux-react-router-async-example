@@ -1,0 +1,39 @@
+{
+  "name": "redux-react-router-async-example",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/emmenko/redux-react-router-async-example",
+  "author": "Nicola Molinari <emmenko@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emmenko/redux-react-router-async-example.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emmenko/redux-react-router-async-example/issues"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack --config webpack.config.production.js",
+    "lint": "eslint lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-runtime": "5.5.8",
+    "redux": "0.11.0",
+    "react": "0.13.3",
+    "react-pure-render": "1.0.2",
+    "react-router": "0.13.3",
+    "whatwg-fetch": "0.9.0"
+  },
+  "devDependencies": {
+    "babel": "5.5.8",
+    "babel-core": "5.5.8",
+    "babel-eslint": "3.1.15",
+    "babel-loader": "5.1.4",
+    "eslint": "0.23.0",
+    "eslint-plugin-react": "2.5.2",
+    "webpack": "1.9.11",
+    "webpack-dev-server": "1.9.0"
+  }
+}

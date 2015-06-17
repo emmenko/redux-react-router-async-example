@@ -20,16 +20,16 @@
   },
   "dependencies": {
     "babel-runtime": "5.5.8",
-    "redux": "0.11.0",
+    "redux": "0.11.1",
     "react": "0.13.3",
     "react-pure-render": "1.0.2",
-    "react-router": "0.13.3",
+    "react-router": "1.0.0-beta2",
     "whatwg-fetch": "0.9.0"
   },
   "devDependencies": {
     "babel": "5.5.8",
     "babel-core": "5.5.8",
-    "babel-eslint": "3.1.15",
+    "babel-eslint": "3.1.16",
     "babel-loader": "5.1.4",
     "eslint": "0.23.0",
     "eslint-plugin-react": "2.5.2",

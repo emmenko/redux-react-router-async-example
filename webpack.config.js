@@ -5,22 +5,25 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
-  entry: {
-    app: './lib/index.js'
-  },
+  entry: [
+    'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
+    './lib/index'
+  ],
   output: {
-    filename: '[name].js',
+    filename: 'app.js',
     path: path.join(__dirname, 'dist'),
     publicPath: '/assets/'
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new ExtractTextPlugin('app.css', { allChunks: true }),
     new HtmlWebpackPlugin({
       title: 'Redux React Router Async Example',
       filename: 'index.html',
       template: 'index.template.html',
-      favicon: path.join(__dirname, './assets/images/favicon.ico')
+      favicon: path.join(__dirname, 'assets', 'images', 'favicon.ico')
     })
   ],
   module: {

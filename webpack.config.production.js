@@ -9,7 +9,7 @@ module.exports = {
     app: './lib/index.js'
   },
   output: {
-    filename: '[name].js',
+    filename: '[name].min.js',
     path: path.join(__dirname, 'dist'),
     publicPath: ''
   },

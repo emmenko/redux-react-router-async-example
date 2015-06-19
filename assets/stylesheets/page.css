@@ -10,6 +10,7 @@
 @custom-selector :--menu #menu;
 @custom-selector :--header .header;
 @custom-selector :--content .content;
+@custom-selector :--footer .footer;
 @custom-selector :--stargazers .stargazers;
 
 /* custom media queries */
@@ -62,6 +63,11 @@ a:visited { color: #265778; }
 :--content { margin-left: auto; margin-right: auto; padding-left: 1em;
   padding-right: 1em; max-width: 768px;
 }
+
+:--footer { font-size: 87.5%; border-top: 1px solid #eee; margin-top: 3.4286em;
+  padding: 1.1429em;
+}
+
 :--stargazers { background: rgb(250, 250, 250); margin: 2em auto;
   border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
 }

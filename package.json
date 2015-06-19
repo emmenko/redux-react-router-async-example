@@ -14,7 +14,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "webpack --config webpack.config.production.js",
+    "build": "webpack --config webpack.config.js",
+    "dist": "cp assets/images/favicon.ico dist/favicon.ico && webpack --config webpack.config.production.js",
     "lint": "eslint lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

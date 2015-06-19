@@ -15,6 +15,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "webpack --config webpack.config.js",
+    "deploy": "npm run lint && npm run dist && ./scripts/deploy",
     "dist": "cp assets/images/favicon.ico dist/favicon.ico && webpack --config webpack.config.production.js",
     "lint": "eslint lib",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -37,6 +38,7 @@
     "eslint": "0.23.0",
     "eslint-plugin-react": "2.5.2",
     "extract-text-webpack-plugin": "0.8.2",
+    "gh-pages": "0.3.1",
     "normalize.css": "3.0.3",
     "style-loader": "0.12.3",
     "webpack": "1.9.11",

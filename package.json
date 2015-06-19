@@ -13,10 +13,10 @@
     "url": "https://github.com/emmenko/redux-react-router-async-example/issues"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "copy:assets": "cp assets/images/. dist/",
+    "build": "npm run clean && webpack",
+    "clean": "rm -rf dist",
     "deploy": "npm run lint && npm run dist && ./scripts/deploy",
-    "dist": "npm run copy:assets && webpack --config webpack.config.production.js",
+    "dist": "npm run build -- --config webpack.config.production.js",
     "lint": "eslint lib",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -40,6 +40,7 @@
     "eslint-plugin-react": "2.5.2",
     "extract-text-webpack-plugin": "0.8.2",
     "gh-pages": "0.3.1",
+    "html-webpack-plugin": "1.5.2",
     "normalize.css": "3.0.3",
     "style-loader": "0.12.3",
     "webpack": "1.9.11",

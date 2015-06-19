@@ -58,6 +58,8 @@ a:visited { color: #265778; }
   color: #666; letter-spacing: -0.02em;
 }
 
+#main { min-height: 500px; }
+
 :--content { margin-left: auto; margin-right: auto; padding-left: 1em;
   padding-right: 1em; max-width: 768px;
 }

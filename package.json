@@ -13,11 +13,12 @@
     "url": "https://github.com/emmenko/redux-react-router-async-example/issues"
   },
   "scripts": {
-    "start": "node server.js",
     "build": "webpack --config webpack.config.js",
+    "copy:assets": "cp assets/images/. dist/",
     "deploy": "npm run lint && npm run dist && ./scripts/deploy",
-    "dist": "cp assets/images/favicon.ico dist/favicon.ico && webpack --config webpack.config.production.js",
+    "dist": "npm run copy:assets && webpack --config webpack.config.production.js",
     "lint": "eslint lib",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

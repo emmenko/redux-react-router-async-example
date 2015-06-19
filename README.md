@@ -1,5 +1,7 @@
 **work in progress**
 
-In the meantime, make sure to checkout [redux](https://github.com/gaearon/redux) and [react-router](https://github.com/rackt/react-router).
+Preview: http://emmenko.github.io/redux-react-router-async-example
 
-> Until this is not ready, you can also have a look at the [initial example using react-router and data fetching](https://github.com/gaearon/redux/pull/59).
+# Getting started
+
+_Coming soon..._

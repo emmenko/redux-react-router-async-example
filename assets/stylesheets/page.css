@@ -38,14 +38,12 @@ a:visited { color: #265778; }
 :--layout, #menu, .menu-link { transition: all 0.2s ease-out; }
 
 :--menu { margin-left: -160px; width: 160px; position: fixed; top: 0; left: 0;
-  bottom: 0; z-index: 1000; background: #191818; overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  bottom: 0; z-index: 1000; overflow-y: auto; -webkit-overflow-scrolling: touch;
+  border-right: 1px solid #ccc;
 }
 :--menu a { color: var(--fontColor); border: none; white-space: normal; padding: 0.625em 1em; }
-:--menu .pure-menu li a:hover,
-:--menu .pure-menu li a:focus { background: #333; }
 :--menu .pure-menu-heading { font-size: 125%; font-weight: 300; letter-spacing: 0.1em;
-  color: #fff; margin-top: 0; padding: 0.5em 0.8em; text-transform: uppercase;
+  color: #222; margin-top: 0; padding: 0.5em 0.8em; text-transform: uppercase;
 }
 :--menu .pure-menu-heading:hover,
 :--menu .pure-menu-heading:focus { color: var(--fontColor); }

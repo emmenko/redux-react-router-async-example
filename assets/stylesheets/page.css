@@ -2,6 +2,7 @@
 :root {
   --fontFamily: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --bkgColor: #fff;
+  --fontColor: #999;
 }
 
 /* custom selectors */
@@ -25,7 +26,11 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; color: rgb(75, 75, 75); }
 
 a:visited { color: #265778; }
 
-.ellipsis { white-space: 'nowrap'; text-overflow: 'ellipsis'; overflow: 'hidden' }
+.ellipsis { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.link a i { font-size: 200%; color: var(--fontColor); }
+
+.pure-form legend { color: var(--fontColor); }
 
 /* scaffolding */
 :--layout { position: relative; padding-left: 0; }
@@ -35,14 +40,14 @@ a:visited { color: #265778; }
   bottom: 0; z-index: 1000; background: #191818; overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-:--menu a { color: #999; border: none; white-space: normal; padding: 0.625em 1em; }
+:--menu a { color: var(--fontColor); border: none; white-space: normal; padding: 0.625em 1em; }
 :--menu .pure-menu li a:hover,
 :--menu .pure-menu li a:focus { background: #333; }
 :--menu .pure-menu-heading { font-size: 125%; font-weight: 300; letter-spacing: 0.1em;
   color: #fff; margin-top: 0; padding: 0.5em 0.8em; text-transform: uppercase;
 }
 :--menu .pure-menu-heading:hover,
-:--menu .pure-menu-heading:focus { color: #999; }
+:--menu .pure-menu-heading:focus { color: var(--fontColor); }
 
 :--header {
   font-family: var(--fontFamily); background: var(--bkgColor);
@@ -62,9 +67,14 @@ a:visited { color: #265778; }
 }
 
 .l-box { padding: 1em; }
-.l-box-top { border-right: 1px solid #999; }
+.l-box-top { border-right: 1px solid var(--fontColor); }
 .l-box-top a { margin-right: 15px; float: left; }
 .l-box-top .repo-info { text-align: right; margin-right: 5px; }
+
+.explore { margin: 50px 0; text-align: center; }
+
+.section-user { text-align: center; }
+.section-repo { margin: 0 auto; max-width: 300px; }
 
 /* media queries */
 @media (--viewport-medium) {

@@ -104,6 +104,11 @@ a:visited { color: #265778; }
 .section-user { text-align: center; }
 .section-repo { margin: 0 auto; max-width: 300px; }
 
+.pagination { text-align: center; }
+.pagination ul { margin: 0; padding: 0; list-style: none; }
+.pagination li { display: inline-block; margin-right: 10px; cursor: pointer; }
+.pagination .disabled { color: #ddd; }
+
 /* media queries */
 @media (--viewport-small) {
   :--layout.active { position: relative; left: 160px; }

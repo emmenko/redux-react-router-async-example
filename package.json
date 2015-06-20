@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "babel-runtime": "5.5.8",
+    "classnames": "2.1.2",
     "redux": "0.11.1",
     "react": "0.13.3",
     "react-pure-render": "1.0.2",

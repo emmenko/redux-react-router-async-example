@@ -14,6 +14,7 @@
 @custom-selector :--stargazers .stargazers;
 
 /* custom media queries */
+@custom-media --viewport-small (max-width: 58em);
 @custom-media --viewport-medium (min-width: 58em);
 
 /* styleguide */
@@ -24,6 +25,8 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 body { min-width: 320px; color: #777; line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; color: rgb(75, 75, 75); }
+
+h2 { margin: 2em 0 1em 0; font-weight: 300; color: #888; position: relative; }
 
 a:visited { color: #265778; }
 
@@ -36,6 +39,8 @@ a:visited { color: #265778; }
 /* scaffolding */
 :--layout { position: relative; padding-left: 0; }
 :--layout, #menu, .menu-link { transition: all 0.2s ease-out; }
+:--layout.active .menu-link { left: 160px; }
+:--layout.active #menu { left: 160px; width: 160px; }
 
 :--menu { margin-left: -160px; width: 160px; position: fixed; top: 0; left: 0;
   bottom: 0; z-index: 1000; overflow-y: auto; -webkit-overflow-scrolling: touch;
@@ -47,6 +52,23 @@ a:visited { color: #265778; }
 }
 :--menu .pure-menu-heading:hover,
 :--menu .pure-menu-heading:focus { color: var(--fontColor); }
+
+.menu-link { position: fixed; display: block; top: 0; left: 0;
+  width: 4em; height: 4em; background: #ccc;
+  font-size: 11px; z-index: 10; padding: 1em;
+}
+.menu-link span { position: relative; display: block; margin-top: 0.9em; }
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after { background-color: #fff; width: 100%; height: .2em;
+  transition: all 0.4s;
+}
+.menu-link span:before,
+.menu-link span:after { position: absolute; top: -.55em; content: " "; }
+.menu-link span:after { top: .55em; }
+.menu-link.active span { background: transparent; }
+.menu-link.active span:after { transform: rotate(-45deg) translate(.4em, -.3em); }
+.menu-link.active span:before { transform: rotate(45deg) translate(.5em, .4em); }
 
 :--header {
   font-family: var(--fontFamily); background: var(--bkgColor);
@@ -83,6 +105,10 @@ a:visited { color: #265778; }
 .section-repo { margin: 0 auto; max-width: 300px; }
 
 /* media queries */
+@media (--viewport-small) {
+  :--layout.active { position: relative; left: 160px; }
+}
+
 @media (--viewport-medium) {
   :--layout { padding-left: 160px; left: 0; }
 

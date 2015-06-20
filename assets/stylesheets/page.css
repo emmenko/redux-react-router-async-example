@@ -111,8 +111,8 @@ a:visited { color: #265778; }
 
 @media (--viewport-medium) {
   :--layout { padding-left: 160px; left: 0; }
-
   :--menu { left: 160px; }
+  .menu-link { position: fixed; left: 160px; display: none; }
 }
 
 @media screen and (min-width: 48em) {

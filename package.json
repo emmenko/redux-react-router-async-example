@@ -13,9 +13,9 @@
     "url": "https://github.com/emmenko/redux-react-router-async-example/issues"
   },
   "scripts": {
-    "build": "npm run clean && webpack",
+    "build": "npm run clean && npm run lint && webpack",
     "clean": "rm -rf dist",
-    "deploy": "npm run lint && npm run dist && ./scripts/deploy",
+    "deploy": "npm run dist && gh-pages -d dist",
     "dist": "npm run build -- --config webpack.config.production.js",
     "lint": "eslint lib",
     "start": "npm run build && node server.js",

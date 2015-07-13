@@ -28,8 +28,9 @@
     "parse-link-header": "0.2.0",
     "react": "0.13.3",
     "react-pure-render": "1.0.2",
+    "react-redux": "^0.2.1",
     "react-router": "1.0.0-beta3",
-    "redux": "1.0.0-alpha",
+    "redux": "1.0.0-rc",
     "whatwg-fetch": "0.9.0"
   },
   "devDependencies": {

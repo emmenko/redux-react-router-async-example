@@ -3,6 +3,7 @@
   --fontFamily: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --bkgColor: #fff;
   --fontColor: #999;
+  --errorFontColor: #dd2c00;
 }
 
 /* custom selectors */
@@ -35,6 +36,8 @@ a:visited { color: #265778; }
 .link a i { font-size: 200%; color: var(--fontColor); }
 
 .pure-form legend { color: var(--fontColor); }
+
+.error { color: var(--errorFontColor) !important; }
 
 /* scaffolding */
 :--layout { position: relative; padding-left: 0; }

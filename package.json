@@ -29,6 +29,7 @@
     "redux": "1.0.1",
     "redux-thunk": "0.1.0",
     "react": "0.13.3",
+    "redux-devtools": "1.1.1",
     "react-pure-render": "1.0.2",
     "react-redux": "0.9.0",
     "react-router": "1.0.0-beta3",

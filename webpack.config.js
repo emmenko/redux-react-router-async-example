@@ -18,6 +18,12 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('development')
+      },
+      '__DEVTOOLS__': true
+    }),
     new ExtractTextPlugin('app.css', { allChunks: true }),
     new HtmlWebpackPlugin({
       title: 'Redux React Router Async Example',

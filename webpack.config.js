@@ -6,8 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
+    'webpack-hot-middleware/client',
     './lib/index'
   ],
   output: {
@@ -35,7 +34,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!cssnext-loader') },
-      { test: /\.js$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ }
+      { test: /\.js$/, loaders: ['babel'], include: path.join(__dirname, 'lib') }
     ]
   },
   cssnext: {

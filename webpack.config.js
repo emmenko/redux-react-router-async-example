@@ -21,7 +21,7 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
       },
-      '__DEVTOOLS__': true
+      '__DEVTOOLS__': process.env.DEVTOOLS === 'true' ? true : false
     }),
     new ExtractTextPlugin('app.css', { allChunks: true }),
     new HtmlWebpackPlugin({

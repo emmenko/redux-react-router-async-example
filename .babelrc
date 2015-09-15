@@ -1,8 +1,11 @@
 {
   "optional": ["runtime"],
   "stage": 0,
-  "plugins": ["react-transform"],
+  "plugins": ["react-intl", "react-transform"],
   "extra": {
+    "react-intl": {
+      "messagesDir": "_translations"
+    },
     "react-transform": [
       {
         "target": "react-transform-webpack-hmr",

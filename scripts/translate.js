@@ -22,6 +22,14 @@ let defaultMessages = globSync(MESSAGES_PATTERN)
   return collection
 }, {})
 
+// Sort keys by name
+const messageKeys = Object.keys(defaultMessages)
+messageKeys.sort()
+defaultMessages = messageKeys.reduce((acc, key) => {
+  acc[key] = defaultMessages[key]
+  return acc
+}, {})
+
 mkdirpSync(LANG_DIR)
 fs.writeFileSync(LANG_DIR + 'en.json',
   JSON.stringify(defaultMessages, null, 2))

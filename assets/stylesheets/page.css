@@ -70,6 +70,8 @@ a:visited { color: #265778; }
 .menu-link.active span:after { transform: rotate(-45deg) translate(.4em, -.3em); }
 .menu-link.active span:before { transform: rotate(45deg) translate(.5em, .4em); }
 
+:--menu .language-switcher { padding: 0.625em 1em; border-top: 1px solid #ccc; }
+
 :--header {
   font-family: var(--fontFamily); background: var(--bkgColor);
   max-width: 768px; margin: 0 auto; padding: 1em; text-align: center;

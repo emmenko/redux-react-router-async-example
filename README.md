@@ -7,9 +7,26 @@ This is a boilerplate example showcasing mostly [Redux](https://github.com/gaear
 ## Development
 
 ```bash
-npm install
-npm start
+$ npm install
+$ npm start
 ```
+
+### I18n support
+
+All messages in this website are localized and rendered using `react-intl@2.0`.
+
+There is also a [babel plugin](https://github.com/yahoo/babel-plugin-react-intl) to extract all the default messages into `./_translations/lib` to be provided to translators.
+
+```bash
+$ npm run build:i18n
+```
+
+You can also run a script to extract all those translations as key-value.
+
+```bash
+$ npm run build:i18n:langs
+```
+
 
 #### Thanks
 

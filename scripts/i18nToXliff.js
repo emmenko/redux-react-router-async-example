@@ -34,16 +34,16 @@ defaultMessages = messageKeys.reduce((acc, key) => {
 }, {})
 
 // Build the XLIFF document for the available languages
+i18n.en = messageKeys.reduce((acc, key) => {
+  acc[key] = defaultMessages[key].defaultMessage
+  return acc
+}, {})
 Object.keys(i18n).forEach(lang => {
   const langDoc = i18n[lang]
   const units = buildUnits(defaultMessages, langDoc)
 
   fs.writeFileSync(`${LANG_DIR}${lang}.xml`, buildXliffDocument(lang, units))
 })
-// ...and for `en`
-fs.writeFileSync(`${LANG_DIR}en.xml`,
-  buildXliffDocument('en', buildUnits(defaultMessages, defaultMessages)))
-
 
 function buildUnits (source, target) {
   return Object.keys(source).map(key => {

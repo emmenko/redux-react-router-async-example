@@ -31,7 +31,7 @@
     "normalize.css": "3.0.3",
     "parse-link-header": "0.4.1",
     "react": "0.13.3",
-    "react-intl": "2.0.0-pr-1",
+    "react-intl": "2.0.0-pr-2",
     "react-pure-render": "1.0.2",
     "react-redux": "3.0.1",
     "react-router": "1.0.0-rc1",

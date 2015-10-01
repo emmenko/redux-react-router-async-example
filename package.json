@@ -18,7 +18,7 @@
     "build:i18n:langs": "npm run build:i18n && babel-node scripts/translate.js",
     "clean": "rimraf dist",
     "deploy": "npm run dist && gh-pages -d dist",
-    "dist": "npm run build -- --config webpack.config.production.js",
+    "dist": "npm run clean && npm run lint && NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint lib",
     "start": "npm run build && node server.js",
     "start:devtools": "npm run build && DEVTOOLS=true node server.js",

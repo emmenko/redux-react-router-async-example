@@ -63,8 +63,8 @@ function buildXliffUnit (id, note, source, target, state = 'initial') {
     <note>${note || ''}</note>
   </notes>
   <segment state="${state}">
-    <source>${source}</source>
-    <target>${target || ''}</target>
+    <source><![CDATA[${source}]]></source>
+    <target><![CDATA[${target || ''}]]></target>
   </segment>
 </unit>
   `

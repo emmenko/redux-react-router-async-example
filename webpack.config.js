@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -23,7 +22,6 @@ module.exports = {
       },
       '__DEVTOOLS__': process.env.DEVTOOLS === 'true' ? true : false
     }),
-    new ExtractTextPlugin('app.css', { allChunks: true }),
     new HtmlWebpackPlugin({
       title: 'Redux React Router Async Example',
       filename: 'index.html',
@@ -33,7 +31,7 @@ module.exports = {
   ],
   module: {
     loaders: [
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!cssnext-loader') },
+      { test: /\.css$/, loader: 'style-loader!css-loader!cssnext-loader' },
       { test: /\.js$/, loaders: ['babel'], include: path.join(__dirname, 'lib') }
     ]
   },

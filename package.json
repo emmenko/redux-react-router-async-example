@@ -36,8 +36,11 @@
     "react-pure-render": "^1.0.2",
     "react-redux": "^4.0.0",
     "react-router": "^1.0.0-rc3",
-    "redux": "3.0.2",
-    "redux-devtools": "^2.1.5",
+    "redux": "^3.0.2",
+    "redux-devtools": "^3.0.0-beta-3",
+    "redux-devtools-log-monitor": "^1.0.0-beta-3",
+    "redux-devtools-dock-monitor": "^1.0.0-beta-3",
+    "redux-router": "^1.0.0-beta3",
     "redux-thunk": "^1.0.0",
     "whatwg-fetch": "^0.10.0"
   },

@@ -1,8 +1,33 @@
 http://emmenko.github.io/redux-react-router-async-example
 
-This is a boilerplate example showcasing mostly [Redux](https://github.com/gaearon/redux) and [React Router](https://github.com/rackt/react-router).
+This is a boilerplate example showcasing _mostly_ [Redux](https://github.com/gaearon/redux) and [React Router](https://github.com/rackt/react-router).
 
 > Still a **WIP** but it aims to provide different examples or use cases with the two libraries.
+
+## Features
+
+- latest `react`, `redux`, `react-router`
+- `devtools` + `HMR` for development
+- `react`
+  - higher-order components
+  - higher-order functions
+- `redux`
+  - bootstrap initial state
+  - store enhancers (e.g.: localStorage persistence)
+  - middleware composition
+  - easy-to-configure reducers
+  - async actions
+- `react-router`
+  - nested routes
+  - secured area by login
+  - keep routes into state for easy time travel
+- `i18n` support by `react-intl`
+  - scripts to extract messages and generate `XLIFF` files for translators
+- GitHub API with pagination
+- CSSnext bundles
+  - injected into HTML by webpack for development (allows `HMR`)
+  - bundled as a separate file for production
+- development tools such as `webpack`, `babel`, `eslint`
 
 ## Development
 

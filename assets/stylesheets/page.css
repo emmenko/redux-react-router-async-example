@@ -1,8 +1,10 @@
 /* custom properties */
 :root {
   --fontFamily: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --bkgColor: #fff;
+  --bkgColor: #FFF;
   --fontColor: #999;
+  --colorWhite: #FFF;
+  --colorRed: #DD514C;
 }
 
 /* custom selectors */
@@ -35,6 +37,17 @@ a:visited { color: #265778; }
 .link a i { font-size: 200%; color: var(--fontColor); }
 
 .pure-form legend { color: var(--fontColor); }
+
+.error-message { margin-left: 45px; width: 100%; }
+.error-message > div {
+  padding: 20px; padding-right: 60px; color: var(--colorWhite);
+  width: 100%; position: relative; background-color: var(--colorRed);
+}
+.error-message p { margin: 0; }
+.error-message .close-button {
+  float: right; font-size: 21px; line-height: 1; border: 0;
+  background: none; color: var(--colorWhite); font-size: 1em;
+}
 
 /* scaffolding */
 :--layout { position: relative; padding-left: 0; }
@@ -120,6 +133,8 @@ a:visited { color: #265778; }
   :--layout { padding-left: 160px; left: 0; }
   :--menu { left: 160px; }
   .menu-link { position: fixed; left: 160px; display: none; }
+  .error-message { margin-left: 0; }
+  .error-message > div { padding-right: 20px; }
 }
 
 @media screen and (min-width: 48em) {

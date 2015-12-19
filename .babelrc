@@ -1,5 +1,5 @@
 {
-  "plugins": [ "transform-decorators", "transform-runtime" ],
+  "plugins": ["transform-runtime"],
   "presets": [ "es2015", "react", "stage-0" ],
   "env": {
     "development": {
@@ -16,6 +16,14 @@
               "imports": [ "react", "redbox-react" ]
             }
           ]
+        }]
+      ]
+    },
+    "i18n": {
+      "plugins": [
+        [ "react-intl", {
+          "messagesDir": "./_translations",
+          "enforceDescriptions": true
         }]
       ]
     }

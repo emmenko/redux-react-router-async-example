@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "npm run clean && npm run lint && webpack",
-    "build:i18n": "rimraf _translations && BABEL_ENV=i18n babel --quiet --plugins react-intl lib",
+    "build:i18n": "rimraf _translations && BABEL_ENV=i18n babel --quiet --plugins react-intl lib > /dev/null",
     "build:i18n:langs": "npm run build:i18n && babel-node scripts/i18nToXliff.js",
     "clean": "rimraf dist",
     "deploy": "npm run dist && gh-pages -d dist",

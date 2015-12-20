@@ -23,7 +23,7 @@
       "plugins": [
         [ "react-intl", {
           "messagesDir": "./_translations",
-          "enforceDescriptions": true
+          "enforceDescriptions": false
         }]
       ]
     }

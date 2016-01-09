@@ -1,8 +1,10 @@
 http://emmenko.github.io/redux-react-router-async-example
 
-This is a boilerplate example showcasing _mostly_ [Redux](https://github.com/gaearon/redux) and [React Router](https://github.com/rackt/react-router).
+This is a boilerplate example showcasing _mostly_ [Redux](https://github.com/gaearon/redux) and [React Router](https://github.com/rackt/react-router) and it aims to provide different examples or use cases with the two libraries.
 
-> Still a **WIP** but it aims to provide different examples or use cases with the two libraries.
+##### The project will be constantly updated and improved with the latest dependencies, features, best practices and so on.
+
+> Check out the [migration to babel 6](https://github.com/emmenko/redux-react-router-async-example/pull/52).
 
 ## Features
 

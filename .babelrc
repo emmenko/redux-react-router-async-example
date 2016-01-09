@@ -1,18 +1,31 @@
 {
-  "optional": ["runtime"],
-  "stage": 0,
+  "plugins": ["transform-runtime"],
+  "presets": [ "es2015", "stage-0", "react" ],
   "env": {
     "development": {
-      "plugins": ["react-transform"],
-      "extra": {
-        "react-transform": {
-          "transforms": [{
-            "transform": "react-transform-hmr",
-            "imports": ["react"],
-            "locals": ["module"]
-          }]
-        }
-      }
+      "plugins": [
+        [ "react-transform", {
+          "transforms": [
+            {
+              "transform": "react-transform-hmr",
+              "imports": ["react"],
+              "locals": ["module"]
+            },
+            {
+              "transform": "react-transform-catch-errors",
+              "imports": [ "react", "redbox-react" ]
+            }
+          ]
+        }]
+      ]
+    },
+    "i18n": {
+      "plugins": [
+        [ "react-intl", {
+          "messagesDir": "./_translations",
+          "enforceDescriptions": false
+        }]
+      ]
     }
   }
 }

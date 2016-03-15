@@ -77,6 +77,8 @@
     "redux-devtools-dock-monitor": "~1.0.1",
     "redux-devtools-log-monitor": "~1.0.1",
     "rimraf": "^2.5.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.10",
     "webpack-dev-middleware": "^1.4.0",

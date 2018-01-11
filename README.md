@@ -44,6 +44,7 @@ This is a boilerplate example showcasing _mostly_ [Redux](https://github.com/gae
 ```bash
 $ npm install
 $ npm start
+$ npm test
 ```
 
 ### I18n support
